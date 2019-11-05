@@ -1,3 +1,8 @@
+import 'package:conversor/dashboard.dart';
+import 'package:conversor/longitud.dart';
+import 'package:conversor/masa.dart';
+import 'package:conversor/temperatura.dart';
+import 'package:conversor/volumen.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -31,7 +36,7 @@ class ConversorState extends State<Conversor>{
     // Retornamos la construccion completa de Widgets
     return SplashScreen(
       seconds: 5,
-      navigateAfterSeconds: null,
+      navigateAfterSeconds: Dashboard(),
       title: Text("Bienvenidos....",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
