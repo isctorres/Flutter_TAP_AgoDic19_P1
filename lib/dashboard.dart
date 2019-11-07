@@ -45,28 +45,32 @@ class MenuLateralState extends State<MenuLateral>{
               title: Text('Masa'),
               trailing: Icon(Icons.all_inclusive),
               onTap: (){
-
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/masa');
               },
             ),
             ListTile(
               title: Text('Volumen'),
               trailing: Icon(Icons.all_inclusive),
               onTap: (){
-                
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/vol');
               },
             ),
             ListTile(
               title: Text('Temperatura'),
               trailing: Icon(Icons.all_inclusive),
               onTap: (){
-                
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/temp');
               },
             ),
             ListTile(
               title: Text('Longitud'),
               trailing: Icon(Icons.all_inclusive),
               onTap: (){
-                
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/long');
               },
             )
           ],
